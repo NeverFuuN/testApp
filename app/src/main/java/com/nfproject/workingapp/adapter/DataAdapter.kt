@@ -17,8 +17,7 @@ class dataAdapter(private var dblist: ArrayList<databaseModel>) :
         var name: TextView = itemView.tv_name
         var email: TextView = itemView.tv_email
         var msg: TextView = itemView.tv_msg
-        var btnDel = itemView.btn_delete
-        var btnEdt = itemView.btn_edt
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
