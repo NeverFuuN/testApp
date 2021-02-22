@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.nfproject.workingapp.ui.home.HomeFragment"
+        android:name="com.nfproject.workingapp.ui.fragments.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,18 +16,26 @@
         <action
             android:id="@+id/action_navigation_home_to_Map"
             app:destination="@id/Map" />
+        <action
+            android:id="@+id/action_navigation_home_to_mapActivity"
+            app:destination="@id/mapActivity" />
     </fragment>
 
     <fragment
         android:id="@+id/AddItems"
-        android:name="com.nfproject.workingapp.ui.Additems.AdditemsFragment"
+        android:name="com.nfproject.workingapp.ui.fragments.additems.AdditemsFragment"
         android:label="@string/title_add"
         tools:layout="@layout/fragment_additems" />
 
     <fragment
         android:id="@+id/Map"
-        android:name="com.nfproject.workingapp.ui.Map.MapFragment"
+        android:name="com.nfproject.workingapp.ui.fragments.map.MapFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map" />
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.nfproject.workingapp.ui.activites.MapActivity"
+        android:label="activity_map"
+        tools:layout="@layout/activity_map" />
 
 </navigation>
